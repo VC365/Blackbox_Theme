@@ -36,7 +36,7 @@ sudo cp "$SCRIPT_DIR/rofi_menu.desktop" "/usr/share/applications"
 sudo chmod a+x "/usr/share/applications/rofi_menu.desktop"
 cp "$SCRIPT_DIR/blackboxrc" "$HOME/.blackboxrc"
 rm -rf "$HOME/.blackbox"
-cp -r "$SCRIPT_DIR/.blackbox" "$HOME/.blackbox"
+cp -r "$SCRIPT_DIR/blackbox" "$HOME/.blackbox"
 chmod a+x $HOME/.blackbox/Scripts/*.sh
 echo "done"
 }

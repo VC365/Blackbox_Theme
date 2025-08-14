@@ -6,7 +6,9 @@ NIGHT_TEMP=3600
 INTERVAL=600 #second
 
 state=""
-
+if ! whereis -b "$1" | grep -q '/'; then
+	exit 1
+fi
 while true; do
     current_hour=$(date +%H)
 
