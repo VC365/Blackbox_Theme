@@ -1,0 +1,47 @@
+super + Tab
+	rofi -show window -theme ~/.blackbox/Themes/rofi/window.rasi
+
+alt + Tab 
+	rofi -show window -theme ~/.blackbox/Themes/rofi/window.rasi
+
+alt + F12
+	rofi -show drun -theme ~/.blackbox/Themes/rofi/menu.rasi
+
+alt + F4
+    xdotool getactivewindow windowclose
+
+super + F4
+    sh -c 'win=$(xdotool getactivewindow); xdotool windowclose "$win" || xdotool windowkill "$win"'
+
+ctrl + shift + Escape
+	lxtask
+
+shift + Insert
+	sh -c 'gnome-screenshot -c -a -f "$SCREENSHOT_FOLDER/نماگرفت_$(date --universal | sed "s/ (UTC)//").png"'
+
+alt + Insert
+	sh -c 'gnome-screenshot -c -w -f "$SCREENSHOT_FOLDER/نماگرفت_$(date --universal | sed "s/ (UTC)//").png"'
+
+Insert
+	sh -c 'gnome-screenshot -c -f "$SCREENSHOT_FOLDER/نماگرفت_$(date --universal | sed "s/ (UTC)//").png"'
+
+alt + x 
+	terminator
+
+ctrl + alt + Delete
+	~/.blackbox/Scripts/power.sh
+
+XF86AudioPlay
+	playerctl play-pause
+
+XF86AudioPrev
+	playerctl previous
+
+XF86AudioNext
+	playerctl next
+
+super + F5
+    xscreensaver-command --lock
+    
+alt + F2
+	rofi -show run -theme ~/.blackbox/Theme/rofi/runner.rasi

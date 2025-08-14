@@ -1,0 +1,26 @@
+#!/bin/bash
+### Made by VC365 <https://github.com/VC365>
+
+NIGHT_TEMP=3600
+
+INTERVAL=600 #second
+
+state=""
+
+while true; do
+    current_hour=$(date +%H)
+
+    if [ "$current_hour" -ge 19 ] || [ "$current_hour" -lt 7 ]; then
+        if [ "$state" != "on" ]; then
+            redshift -P -O $NIGHT_TEMP
+            state="on"
+        fi
+    else
+        if [ "$state" != "off" ]; then
+            redshift -x
+            state="off"
+        fi
+    fi
+
+    sleep $INTERVAL
+done

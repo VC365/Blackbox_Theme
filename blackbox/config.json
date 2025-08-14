@@ -1,0 +1,9 @@
+{
+  "background": "Mokka-tree.jpg",
+  "keyboard_layout": "us,ir",
+  "keyboard_option": "grp:rctrl_rshift_toggle",
+  "redshift": true,
+  "vc_clock": true,
+  "conky": true,
+  "screenshot_folder": "~/Pictures"
+}

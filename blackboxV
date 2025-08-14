@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+### Made by VC365 <https://github.com/VC365>
+
+export SCREENSHOT_FOLDER="$HOME"
+bash "$HOME/.blackbox/Scripts/start_up.sh"
+if [ "$REDSHIFT_ABCD" = true ]; then
+    # redshift -P -O 3600
+    "$DIR_B/Scripts/redshift_X"
+fi
+ksuperkey -e 'Super_L=Alt_L|F12' &
+ksuperkey -e 'Super_R=Alt_L|F12' &
+/usr/bin/blackbox
