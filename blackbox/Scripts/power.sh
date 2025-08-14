@@ -67,7 +67,7 @@ elif command -v loginctl >/dev/null 2>&1; then
     session_manager="loginctl"
 else
     echo "unknown session_manager">>"~/.blackbox/start_up.log"
-    echo "Please set session_manager in .blackbox/Scripts/power.sh">>>>"~/.blackbox/start_up.log"
+    echo "Please set session_manager in .blackbox/Scripts/power.sh">>"~/.blackbox/start_up.log"
     exit 1
 fi
 confirm_run_HH () {
