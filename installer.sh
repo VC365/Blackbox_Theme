@@ -38,6 +38,7 @@ cp "$SCRIPT_DIR/blackboxrc" "$HOME/.blackboxrc"
 rm -rf "$HOME/.blackbox"
 cp -r "$SCRIPT_DIR/blackbox" "$HOME/.blackbox"
 chmod a+x $HOME/.blackbox/Scripts/*.sh
+echo "System restart required"
 echo "done"
 }
 uninstall(){
