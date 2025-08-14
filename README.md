@@ -1,5 +1,5 @@
 # Blackbox_Theme
-Theme pack for BlackboxWM
+Theme pack for BlackboxWM. This project is inspired by archcraft-blackbox and its background is garuda-mokka.
 ## Dependency
 * `blackbox`
 * `feh jq picom tint2 xsettingsd sxhkd dunst nm-applet volume-pulse rofi xscreensaver ksuperkey xdotool polkit-gnome playerctl lxappearance gnome-screenshot` 
